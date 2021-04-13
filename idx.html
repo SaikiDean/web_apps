@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <title>Webové aplikace - maturitní okruh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  
+  
+  <style>
+      body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+
+  .jumbotron {
+    background-color: #b452f5;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .container-fluid {
+    padding: 60px 50px;
+  }
+
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: #b452f5;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #b452f5 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  </style>
+
+
+  <body>
+
+    <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#typy">TYPY</a></li>
+              <li><a href="#proces"></a>TVORBA</li>
+              <li><a href="#hrozby">HROZBY</a></li>
+              <li><a href="#redacomm">E-COMMERCE</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+      <main>
+    <div class="jumbotron text-center">
+      <h1>Webové aplikace</h1>
+    </div>
+
+    <div id="typy" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2>Typy webových aplikací</h2><br>
+            <h4>Dynamické</h4><br>
+            <p>Složitější na výrobu, ale má snadnější metody aktualizací. Navíc bývají přehlednější a mívají kontrolní panel většinou ze systému CMS.</p>
+            <h4>Statické</h4><br>
+            <p>Jedná se o malé webové aplikace, kde se obsah nemění, jelikož aktualizace obsahu jsou náročnější - nejprve se musí celá stránka stáhnout, poté se upraví a nakonec se musí zase poslat na server.</p>
+            <h4>Animované</h4><br>
+            <p>Pomocí technologie Flash tyto webové aplikace využívají animací či obrázků. Kvůli jejich obsahu mají s nimi vyhledávací systémy problém.</p>
+            <h4>RIA (Rich Internet Application)</h4><br>
+            <p>Podobá se desktpové aplikaci, většinou vyžaduje plug-in a běží v prohlížeči.</p>
+            <h4>CMS (Content Management System)</h4><br>
+            <p>Tyto aplikace se často upravují a aktualizují. Ke správě slouží CMS systémy.</p>
+            <h4>Portálové</h4><br>
+            <p>
+                Aplikace má hlavní stranu, která obsahuje odkazy, které vás odkáží na další části dané aplikace. Například zde můžeme zařadit různá fóra či email.
+            </p>
+            <h4>E-Commerce</h4><br>
+            <p>Tyto webové aplikace slouží pro obchodní účely.</p>
+        </div>
+        </div>
+    </div>        
+
+    <div id="proces" class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Fáze tvorby webové aplikace</h2><br>
+                <ol>
+                    <li>
+                      <h4>Cíl a nápad</h4>
+                      <p>Nejprve je důležité si říct, o čem bude webová aplikace pojednávat, jak bude fungovat a případně si můžeme i promyslet předběžný vzhled.</p>
+                    </li>
+                    <li>
+                      <h4>Výběr technologií</h4>
+                      <p>Poté je důležité si ujasnit, v čem budeme aplikaci psát a které technologie se hodí pro funkce této webové aplikace.</p>
+                    </li>
+                    <li>
+                      <h4>Tvorba</h4>
+                      <p>Třetí fází je již práce na webové aplikaci - tvorba základů, testování</p>
+                    </li>
+                    <li>
+                      <h4>Vzhled webové aplikace</h4>
+                      <p>Vzhled je velmi důležitý, měl by být responzivní, neměl by být přeplácaný, aby webová aplikace nepůsobila zmateně.</p>
+                    </li>
+                    <li>
+                      <h4>Konečný výsledek</h4>
+                      <p> V této fázi je aplikace už hotová, avšak stále je možné aplikaci aktualizovat, případně opravovat chyby, které najdeme až později časem.</p>
+                    </li>
+                  </ol>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="hrozby" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+              <h2>Hrozby webových aplikací</h2><br>
+              <h4>Cross-Site Scripting (XSS)</h4><br>
+              <p>Díky této zranitelnosti dokáže útočník vložit do stránky nebezpečný kód, poškodit zobrazovanou stránku nebo v horším případě vylákat z uživatele jeho přihlašovací údaje do aplikace. To může útočník provést např. tím, že na stránce zobrazí uživateli falešné přihlašovací okno, které místo přihlášení uživatele zašle jeho přihlašovací údaje přímo útočníkovi. Je proto důležité, aby aplikace důsledně ověřovala veškerý vstup od uživatele a limitovala tak tento typ útoku.
+            </p>
+            <h4>SQL Injection (ale také i XML, OS, LDAP,...)</h4><br>
+            <P>Jedná se o bezpečnostní mezeru, kdy jsou aplikací zpracovávána data (ať už od uživatele, různých importů apod.), u kterých nedochází ke kontrole jejich validity. Útočník tak může získat přístup k datům, na která nemá oprávnění nebo dokonce přístup k celé databázi, nad níž může provádět libovolné operace. Útočník by si mohl vypsat z databáze např. seznam všech registrovaných uživatelů, včetně jejich osobních údajů, což jsou velmi citlivé informace, které je třeba patřičně chránit.</P>
+            <h4>Cross-Site Request Forgery (CSRF)</h4>
+            <p>CSRF útok probíhá tak, že útočník donutí uživatele vykonat požadovanou akci. Často se tak stává zasláním odkazu např. v emailu, který budí dojem, že ho zaslal administrátor a požaduje např. kliknutí na odkaz, aby se ověřila aktivita účtu uživatele apod. Zaslaný odkaz je však předem vykonstruovaný tak, aby provedl akci, kterou útočník požaduje. Uživateli se po kliknutí na odkaz otevře internetový prohlížeč, který danou akci vykoná. Uživatel se mohl do aplikace přihlásit ještě před otevřením emailu nebo používá funkci Zapamatovat heslo a je tedy v době vykonání akce útočníka v aplikaci přihlášený.  Má tedy přístup k datům a funkcím, které patří pouze jemu. Útočník si tak může nechat citlivá data zaslat k sobě na server nebo změnit údaje uživatele, apod.</p>
+            <h4>Využívání různých komponentů bez znalostí</h4><br>
+            <p>Téměř nikdo dnes nevytváří celou aplikaci od základů sám, ale používá ve své aplikaci různé knihovny, frameworky, či celé opensource systémy apod. Mnoho vývojářů se však nestará o to, jakou verzi do aplikace nasadí a vystačí si s tím, že komponenta funguje. Problém však nastane ve chvíli, kdy se v komponěntě, kterou aplikace používá, objeví bezpečnostní chyba. Tyto chyby bývají zveřejněny a popsány, takže pro útočníka není problém takovou chybu zneužít.</p>
+            <h4>Poškozená autentizace</h4><br>
+            <p>Správa a přihlašování uživatelů je velmi důležitá oblast, která se dotýká všech aplikací, do nichž se přihlašují uživatelé, ať už registrovaní z internetu, či administrátoři za účelem správy systému nebo obsahu. Do této oblasti můžeme zahrnout přihlašování uživatelů, změnu hesla, získání zapomenutého hesla, funkci pamatování hesla, zamykání účtů, aktulizaci osobních údajů uživatele apod. Je důležité mít v aplikaci všechny tyto akce a kroky řádně navržené a bezpečně implementované. Pokud v některém kroku útočník objeví chybu, může se stát, že si tzv. přivlastní identitu uživatele. To znamená, že se bude moci přihlásit jako uživatel, kterému byla identita zcizena, aniž by znal uživatelské jméno nebo heslo daného uživatele. Navíc se o tom uživatel ani administrátor nemusí dozvědět.</p>
+            <h4>Špatné nastavení systému</h4><br>
+            <p>Tyto zranitelnosti se týkají špatného nastavení systému, neaktualizovaného SW a mohou se objevit jak na úrovni aplikace samotné tak na úrovni prostředí, ve kterém je aplikace provozována (služby provozovatele aplikace, hosting). Jste si jisti, že se ve Vaší aplikaci nenachází účet s uživatelským jménem „test” a heslem „Heslo123”? V aplikacích se často při jejím vývojí nachází testovací účty s jednoduchými přihlašovacími údaji nebo funkce, které slouží jako testovací a ověřovací při vývoji aplikace. Často se však stává, že při nasazení aplikace do ostrého provozu nejsou tyto testovací účty a funkce z aplikace odstraněny a poskytují tak útočníkovi snadný způsob průniku do aplikace. V oblasti infrastruktury se může jednat o nezměněné výchozí přihlašovací údaje k administrátorským účtům, síťovým prkvům apod. V různých zařízeních pak zůstávají účty jako je uživatelské jméno „admin” nebo „root” a heslo „admin”.</p>
+            <h4>Citlivá data a údaje</h4><br>
+            <p>
+                Pokud Vaše aplikace uchováva citlivá data uživatelů, jako např. čísla platebních karet, smluv apod., je prakticky povinnost používat k přenosu dat šifrovaný kanál. U webových aplikací se jedná o použití SSL (https protokolu), které zajistí, že přenášená data nelze útočníkem odposlechnout. Pokud aplikace nepoužívá šifrování, pak je snadné např. při přihlašování uživatele zachytit jeho uživatelské jméno a heslo a získat tak přístup do aplikace. Dnešní trend je všude být online a tak se uživatelé do aplikací přihlašují např. z různých wifi sítí, u kterých ani netuší, kdo je provozuje a tedy kdo může sledovat jejich pohyb na internetu a přenášená data.
+Další důležitou věcí je správné uchovávání citlivých údajů uživatelů, např. jejich hesel. Uživatelé často používají stejná hesla do různých systémů a aplikací. V případě napadení Vaší aplikace by tak útočník mohl získat hesla i do jiných systémů uživatele. Je proto důležité hesla uživatelů v aplikaci vůbec neukládat a namísto toho ukládat jejich tzv. otisk (hash). Avšak někdy i to nemusí stačit. Výkon počítačů se neustále zvyšuje a tak dnes není problém prolomit šifrování, které ještě nedávno bylo dostačující. 
+            </p>
+        </div>
+          </div>
+      </div>      
+
+
+      <div id="redacomm" class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Redakční systémy a e-commerce</h2><br>
+                <b><h4>Redakční systémy (CMS)</h4></b>
+                <p>Jedná se o aplikace, kdy klient má nějaký programový doplněk, který souvisí s danou aplikací a může s ním pracovat. Redakční systémy spravují různé dokumenty a přístupy k nim, přidávání článků, obrázků, jedná se i o groupware, spravuje také diskuze.</p>
+                <h4>Známé CMS editory: </h4>
+                <ul>
+                    <li>Webnode</li>
+                    <li>WordPress</li>
+                    <li>Joomla</li>
+                    <li>Drupal</li>
+                </ul>
+                <hr>
+                <h4>E-commerce a její typy: </h4>
+                <table border="2" cellpadding="5" cellspacing="4">
+                    <tr><th>Zkratka</th><th>Celý název</th><th>Poznámka</th></tr>
+                    <tr><td>B-2-B</td><td>Business-to-business</td><td>nabídka mezi firmami</td></tr>
+                    <tr><td>B-2-C</td><td>Business-to-customer</td><td>nabídka pro klienty</td></tr>
+                    <tr><td>C-2-B</td><td>Customer-to-business</td><td>sledování obchodních nabídek zákazníkem</td></tr>
+                    <tr><td>C-2-C</td><td>Customer-to-customer</td><td>názory a feedback</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</main>
+<hr>
+<footer>
+    &copy; Šinclová Sabina, IT4 - 2021
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>
